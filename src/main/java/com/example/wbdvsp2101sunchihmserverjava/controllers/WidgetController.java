@@ -1,7 +1,7 @@
-package com.example.wbdvsp2101cruzpaulserverjava.controllers;
+package com.example.wbdvsp2101sunchihmserverjava.controllers;
 
-import com.example.wbdvsp2101cruzpaulserverjava.models.Widget;
-import com.example.wbdvsp2101cruzpaulserverjava.services.WidgetService;
+import com.example.wbdvsp2101sunchihmserverjava.models.Widget;
+import com.example.wbdvsp2101sunchihmserverjava.services.WidgetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,8 +22,8 @@ public class WidgetController {
     public Widget creatWidgetForTopic(
             @PathVariable("tid") String topicId,
             @RequestBody Widget widget) {
-
-        return service.creatWidgetForTopic(topicId, widget);
+        widget.setTopicId(topicId);
+        return service.creatWidgetForTopic(widget);
     }
 
     @GetMapping("/api/widgets")

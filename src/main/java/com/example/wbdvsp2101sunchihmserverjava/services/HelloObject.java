@@ -1,4 +1,4 @@
-package com.example.wbdvsp2101cruzpaulserverjava.services;
+package com.example.wbdvsp2101sunchihmserverjava.services;
 
 import java.util.Date;
 

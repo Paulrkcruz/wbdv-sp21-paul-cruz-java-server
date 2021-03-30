@@ -1,4 +1,4 @@
-package com.example.wbdvsp2101cruzpaulserverjava;
+package com.example.wbdvsp2101sunchihmserverjava;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
